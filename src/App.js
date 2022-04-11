@@ -6,8 +6,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/movie" element={<Detail />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/movie/:id" element={<Detail />} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
         {/* url '/' 에 접속하면 <Home/> component render */}
       </Routes>
     </Router>
